@@ -45,7 +45,6 @@ public class MainPageUtil {
     public void checkEnterpriseMenu(){
         driver.findElement(By.id("wp-megamenu-item-2806")).isDisplayed();
     }
-
     public void interactWithWebChat(String name, String phone, String message){
         driver.switchTo().frame("podium-bubble");
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("ContactBubble")));
