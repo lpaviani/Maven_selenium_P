@@ -1,7 +1,9 @@
 # Maven_selenium_P
 
 ### Installation
-Requires Maven, you can get it from https://maven.apache.org .
+Requires Java 8;
+
+Requires Maven, you can get it from https://maven.apache.org ;
 
 "make sure you have maven working properly by running on console `mvn -v`"
 
