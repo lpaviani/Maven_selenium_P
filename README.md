@@ -1,13 +1,11 @@
 # Maven_selenium_P
 
 ### Installation
-Requires Java 8;
+- Install java: 1.8.x (https://java.com/en/download/)
+- Install maven: Apache Maven 3.6.3 (https://maven.apache.org) "make sure you have maven working properly by running on console `mvn -v`"
+- Clone or download this repository (git clone https://github.com/lpaviani/Maven_selenium_P.git)
 
-Requires Maven, you can get it from https://maven.apache.org ;
 
-"make sure you have maven working properly by running on console `mvn -v`"
-
-Clone the project from git: https://github.com/lpaviani/Maven_selenium_P.git .
 
 ### Running Through CLI
 
