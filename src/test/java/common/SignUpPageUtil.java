@@ -35,11 +35,10 @@ public class SignUpPageUtil {
         driver.findElement(By.id("phone")).sendKeys(phone);
         driver.findElement(By.id("businessName")).sendKeys(bName);
     }
-    public void checkFieldLimit(String field,String longString){
+    public void checkFieldLimit(String field,String longString, int maxChar){
         WebElement field1 = driver.findElement(By.id(field));
         field1.sendKeys(longString);
         int result = field1.getAttribute("value").length();
-        Assert.assertTrue(result <= SIGNUPPAGE_FIRSTNAME_MAXCHAR);
-        System.out.println(result);
+        Assert.assertTrue(result <= maxChar);
     }
 }

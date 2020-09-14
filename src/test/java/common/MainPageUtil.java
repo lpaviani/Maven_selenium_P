@@ -1,6 +1,8 @@
 package common;
 
+import junit.framework.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import waiter.Waiter;
 
@@ -54,6 +56,11 @@ public class MainPageUtil {
         driver.findElement(By.id("Name")).sendKeys(name);
         driver.findElement(By.id("Mobile Phone")).sendKeys(phone);
         driver.findElement(By.id("Message")).sendKeys(message);
+    }
+    public void clickSocialMediaFacebook(String facebook){
+        driver.findElement(By.id("theme-white")).sendKeys(Keys.END); //Need to find the correct element on the HTML that accepts sendKeys
+        driver.findElement(By.xpath("//*[@id=\'colophon\']/section/div[1]/div[2]/div[5]/div/div[2]/a[2]")).click(); //using xpath as locator
+        Assert.assertEquals(driver.getCurrentUrl(), facebook);
     }
 
 
