@@ -3,6 +3,8 @@
 ### Installation
 Requires Maven, you can get it from https://maven.apache.org .
 
+"make sure you have maven working properly by running on console `mvn -v`"
+
 Clone the project from git: https://github.com/lpaviani/Maven_selenium_P.git .
 
 ### Running Through CLI
