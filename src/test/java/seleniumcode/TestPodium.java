@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import common.MainPageUtil;
 import common.SignUpPageUtil;
@@ -22,6 +23,11 @@ public class TestPodium {
         mainPageUtil = new MainPageUtil(driver);
         signUpPageUtil = new SignUpPageUtil(driver);
     }
+    @AfterTest
+    public void end(){
+        driver.quit();
+    }
+
     @Test  //check the maxCharacter limit of the field. This scenario focus on add validation logic on specific elements, on this test, it checks if ther user was able to enter more character then the field allowed.
     public void checkFieldsLimitSignUpPage(){
         signUpPageUtil.loadSignUpPage(SIGNUPPAGE_URL);
